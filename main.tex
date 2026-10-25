@@ -42,6 +42,7 @@
 \DeclareMathOperator{\sign}{sgn}
 \DeclareMathOperator{\Log}{Log}
 \providecommand{\norm}[1]{\left\lVert#1\right\rVert}
+\newcommand{\email}[1]{\href{mailto:#1}{\texttt{#1}}}
 
 %%%%%%%%%%%%%%Rules%%%%%%%%%%%%%%%%%%%
 \newcommand{\myrule} [3] []{
@@ -117,9 +118,6 @@ prefoothook     =\vspace*{-1pt}\end{Gdbleftbar}%
 ]{lema}   
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\usepackage[backend=biber]{biblatex}
-\addbibresource{Referencias.bib}
-
 %%%%%%%%%%%%Fancy Chapters%%%%%%%%%%%%%%%%%
 %Options: Sonny, Lenny, Glenn, Conny, Rejne, Bjarne, Bjornstrup
 \usepackage[Lenny]{fncychap}
@@ -144,33 +142,30 @@ prefoothook     =\vspace*{-1pt}\end{Gdbleftbar}%
     \vspace*{\baselineskip}
     \rule{\textwidth}{1.6pt}\vspace*{-\baselineskip}\vspace*{2pt}
     \rule{\textwidth}{0.4pt}\\[\baselineskip]
-    {\scshape\Huge Electromagnetismo}\\[0.2\baselineskip]
+    {\rmfamily\scshape\Huge Computación Científica II}\\[0.2\baselineskip]
     \rule{\textwidth}{0.4pt}\vspace*{-\baselineskip}\vspace{3.2pt}
     \rule{\textwidth}{1.6pt}\\[\baselineskip]
     {\Large Autor: \par}
-{\Large Alejandro Saavedra \par}
+{\Large Martín Aedo \par}
 \vfill
-{\large Marzo 2023 \par}
+{\large Agosto 2026 \par}
 {\large v2.0 \par}
 \end{titlepage}
 
 \chapter*{Prefacio}
 
 
-\emph{Este apunte ha sido escrito  por A. Saavedra principalmente a partir de las clases de Electromagnetismo I dictadas por el Prof. Joaquín Díaz de Valdés con algunas notas de las clases de Electrodinámica del Prof. Guillermo Rubilar,  ambos en el Departamento de Física de la Universidad de Concepción.}
+\emph{Este documento es un apunte redactado por Martín Aedo, su uso es destinado para fines académicos y de estudio para el curso de Computación Científica II o de algun otro caracter, dictado por el Prof. G. Rubilar del departamento de Física de la Universidad de Concepción.}
 
-\emph{El objetivo de este apunte es ser de apoyo para los cursos de Electromagnetismo I y II dictados para las carreras de Ciencias Físicas y Astronomía de la Facultad de Ciencias Físicas y Matemáticas de la Universidad de Concepción. Las secciones marcadas con un asterisco (*) usualmente no se pasan en Electromagnetismo I, pero pueden ser (o no ser) contenido de Electromagnetismo II.}
-
-\emph{Cualquier comentario o contribución al correo \textit{asaavedra2001@gmail.com}.}
-
-
+\emph{En caso de comentarios, correcciones o sugerencias, se puede contactar a través del correo electrónico: \email{maraedo2022@udec.cl}}
 \tableofcontents
 
 \pagestyle{mystyle}
 
-\input{./Capitulo1.tex}
+\input{./Chapters/Capitulo1.tex}
 
-\nocite{*} %Referencia todo, incluso lo que no está citado. 
-\printbibliography[title={Referencias}]
+\nocite{*} % Referencia todo, incluso lo que no está citado.
+\bibliographystyle{plain}
+\bibliography{Referencias}
 
 \end{document}
